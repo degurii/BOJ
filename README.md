@@ -3,6 +3,7 @@
 >
 > * 알고리즘 분류별(category) /  번호순(prob_1000~)으로 나눠져 있습니다. <br>
 > * 대체로 BOJ분류를 따릅니다.<br>
+>  굳이 알고리즘을 나눌 이유가 없다고 판단되면 category폴더엔 넣지 않습니다. <br>
 > * 코드 시작전에 간략한 풀이를 달아놓음.<br>
 > www.acmicpc.net<br>
 > https://www.acmicpc.net/user/sansan709<br>
