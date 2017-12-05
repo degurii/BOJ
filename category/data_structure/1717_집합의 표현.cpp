@@ -23,7 +23,7 @@ a와 b는 n 이하의 자연수또는 0이며 같을 수도 있다.
 
 
 /*
-solve:
+solution:
 기초 Disjoint set 문제이다
 Union,Find 를 구현한다
 */

@@ -11,8 +11,12 @@
 출력
 첫째 줄에 정답을 출력한다.
 */
+
+
+
+
 /*
-solve:
+solution:
 전부 -로 묶는다
 */
 #include <iostream>

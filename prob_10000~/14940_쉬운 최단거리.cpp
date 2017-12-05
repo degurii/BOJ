@@ -15,8 +15,8 @@
 
 
 /*
-solve:
-기본문제
+solution:
+기본 bfs문제
 */
 #include <iostream>
 using namespace std;

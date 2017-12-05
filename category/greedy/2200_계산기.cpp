@@ -16,7 +16,7 @@
 
 
 /*
-solve:
+solution:
 잘 생각해서 풀면 된다.
 */
 #include <iostream>

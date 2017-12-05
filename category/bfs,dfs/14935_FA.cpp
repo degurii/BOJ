@@ -17,7 +17,7 @@
 
 
 /*
-solve:
+solution:
 흔한 싸이클문제.
 x의 범위때문에 string으로 처리하면 된다
 */

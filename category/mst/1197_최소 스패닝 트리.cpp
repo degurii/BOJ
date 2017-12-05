@@ -17,7 +17,7 @@ C는 음수일 수도 있으며, 절대값이 1,000,000을 넘지 않는다.
 
 
 /*
-solve:
+solution:
 
 기초 mst문제
 kruskal이나 prim이용

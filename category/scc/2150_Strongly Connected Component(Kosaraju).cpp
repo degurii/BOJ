@@ -21,6 +21,7 @@
 
 
 /*
+solution:
 scc의 기초문제이다
 kosaju알고리즘으로 풀었다.
 */

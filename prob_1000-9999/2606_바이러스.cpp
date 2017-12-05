@@ -15,7 +15,7 @@
 
 
 /*
-sovle:
+solution:
 dfs/bfs/floyd-warshall 전부 가능
 난 union-find로 해결함
 */

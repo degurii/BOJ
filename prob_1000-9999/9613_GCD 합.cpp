@@ -16,7 +16,7 @@
 
 
 /*
-sovle:
+solution:
 단순히 모든 쌍에 대해서 gcd들의 합을 구하는 문제
 답이 int범위를 넘어갈 수 있으므로 long long으로 해야함
 */

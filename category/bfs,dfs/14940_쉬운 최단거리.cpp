@@ -15,7 +15,7 @@
 
 
 /*
-solve:
+solution:
 기본문제
 */
 #include <iostream>

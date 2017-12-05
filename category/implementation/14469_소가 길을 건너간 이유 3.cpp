@@ -13,7 +13,7 @@
 
 
 /*
-solve:
+solution:
 대충 구현한다
 */
 #include <iostream>

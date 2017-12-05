@@ -13,8 +13,10 @@
 */
 
 
+
+
 /*
-sovle:
+solution:
 기초적인 mst문제이다
 kruskal 사용함
 */
