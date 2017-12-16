@@ -9,7 +9,8 @@ struct Edge {
 	Edge(int t = 0, int c = 0) :to(t), cost(c) {};
 };
 
-int n, m;
+int n, m;	//n: num of vertex, m: num of edge
+
 vector<int> dijkstra(vector<vector<Edge> > &p, int now) {
 	vector<int> dist(n + 1, INF);
 	vector<bool> check(n + 1);

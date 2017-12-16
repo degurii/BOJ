@@ -8,7 +8,7 @@ int main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(0);
 
-	int n, m;
+	int n, m;	// n: num of vertex, m: num of edge
 	cin >> n >> m;
 
 	vector<vector<int> > d(n + 1, vector<int>(n + 1, inf));
