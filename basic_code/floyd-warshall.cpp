@@ -1,16 +1,18 @@
 #include <iostream>
+#include <vector>
 #include <algorithm>
 using namespace std;
 const int inf = 0x3f3f3f3f;
 
-int d[401][401];
 int main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(0);
 
-	fill(&d[0][0], &d[0][0] + 401 * 401, inf);
 	int n, m;
 	cin >> n >> m;
+
+	vector<vector<int> > d(n + 1, vector<int>(n + 1, inf));
+
 	for (int i = 0; i < m; i++) {
 		int u, v, w;
 		cin >> u >> v >> w;
