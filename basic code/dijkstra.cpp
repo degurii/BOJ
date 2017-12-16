@@ -47,5 +47,5 @@ int main() {
 	}
 
 	int start = 1;
-	vector<int> dist = dijkstra(p, start); // 시작 노드는 1로 가정
+	vector<int> dist = dijkstra(p, start); // assume that start node is 1
 }
