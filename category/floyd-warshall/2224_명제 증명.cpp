@@ -34,17 +34,15 @@ floyd-warshall을 돌린다.
 */
 #include <iostream>
 #include <string>
-#include <algorithm>
 using namespace std;
-const int inf = 0x3f3f3f3f;
 
-int p[52][52], n;
+bool p[52][52];
+int n;
 int main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(0);
 
 	cin >> n;
-	fill(&p[0][0], &p[0][0] + 52 * 52, inf);
 	for (int i = 0; i < n; i++) {
 		char a, b;
 		string s;
@@ -53,28 +51,28 @@ int main() {
 		else a = a - 'a' + 26;
 		if (b <= 'Z') b -= 'A';
 		else b = b - 'a' + 26;
-		p[a][b] = 1;
+		p[a][b] = true;
 	}
 	for (int i = 0; i < 52; i++) {
-		p[i][i] = 1;
+		p[i][i] = true;
 	}
 	for (int k = 0; k < 52; k++) {
 		for (int i = 0; i < 52; i++) {
 			for (int j = 0; j < 52; j++) {
-				if (p[i][k] == 1 && p[k][j] == 1) p[i][j] = 1;
+				if (p[i][k] && p[k][j]) p[i][j] = true;
 			}
 		}
 	}
 	int ans = 0;
 	for (int i = 0; i < 52; i++) {
 		for (int j = 0; j < 52; j++) {
-			if (p[i][j] == 1 && i != j)  ans++;
+			if (p[i][j] && i != j)  ans++;
 		}
 	}
 	cout << ans << '\n';
 	for (int i = 0; i < 52; i++) {
 		for (int j = 0; j < 52; j++) {
-			if (p[i][j] == 1 && i != j) {
+			if (p[i][j] && i != j) {
 				char a = i, b = j;
 				if (a < 26) a += 'A';
 				else a += 'a' - 26;
