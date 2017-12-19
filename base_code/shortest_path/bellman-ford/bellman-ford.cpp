@@ -22,7 +22,7 @@ int main() {
 		p.push_back(Edge(u, v, w));
 	}
 	
-	dist[1] = 0;	// assume that start node is 1
+	dist[1] = 0;	// assume that the start node is 1
 
 	bool cycle = false;
 	for (int i = 0; i <= n; i++) {
@@ -39,6 +39,6 @@ int main() {
 			}
 		}
 	}
-	if (cycle);	// cycle exists
+	if (cycle);	// case that negative cycle exists
 	else;		// else
 }
