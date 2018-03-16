@@ -18,7 +18,7 @@ int main() {
 	int n;
 	cin >> n;
 
-	// isPrime[x] : True if x is a prime number
+	// isPrime[x] : True when x is a prime number
 	vector<bool> isPrime = initPrime(n);
 
 }
