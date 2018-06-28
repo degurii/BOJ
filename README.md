@@ -5,7 +5,7 @@
 * category: 알고리즘 분류별 문제 답안 코드
 * prob_1000~: BOJ 번호순으로 정렬
 
-####문제에 대한 자세한 풀이는 블로그에 있습니다.
+#### 문제에 대한 자세한 풀이는 블로그에 있습니다.
 *블로그: http://degurii.tistory.com/
 *BOJ정보: https://www.acmicpc.net/user/sansan709  
 
