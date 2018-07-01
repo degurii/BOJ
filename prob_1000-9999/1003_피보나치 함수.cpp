@@ -17,32 +17,25 @@ dp를 이용하는데 피보나치값이 아니라 0과 1의 개수를 저장한다
 */
 #include <iostream>
 using namespace std;
+using pii = pair<int, int>;
 
-struct Node{
-	int z, o;
-	Node(int z=0, int o=0): z(z), o(o){}
-	Node operator + (const Node &other) {
-		return Node(z + other.z, o + other.o);
-	}
-}d[41];
-
-Node fib(int n) {
-	if (n == 0) 
-		return Node(1, 0);
-	else if (n == 1) 
-		return Node(0, 1);
-	
-	if (d[n].z != 0 || d[n].o != 0)
-		return d[n];
-	return d[n] = fib(n - 1) + fib(n - 2);
+int n, t;
+pii d[50];
+pii operator + (const pii &a, const pii &b) {
+	return { a.first + b.first, a.second + b.second };
 }
 int main() {
-	int t;
+	ios_base::sync_with_stdio(false);
+	cin.tie(0);
+
+	d[0] = { 1, 0 };
+	d[1] = { 0, 1 };
+	for (int i = 2; i <= 40; i++) {
+		d[i] = d[i - 1] + d[i - 2];
+	}
 	cin >> t;
 	while (t--) {
-		int n;
 		cin >> n;
-		Node a = fib(n);
-		cout << a.z << ' ' << a.o << '\n';
+		cout << d[n].first << ' ' << d[n].second << '\n';
 	}
 }
