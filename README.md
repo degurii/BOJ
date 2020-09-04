@@ -7,7 +7,7 @@
 
 #### 문제에 대한 자세한 풀이는 블로그에 있습니다.
 * 블로그: http://degurii.tistory.com/
-* BOJ정보: https://www.acmicpc.net/user/sansan709  
+* BOJ정보: https://www.acmicpc.net/user/degurii  
 
 www.acmicpc.net  
 
